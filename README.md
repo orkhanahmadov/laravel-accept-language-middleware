@@ -7,11 +7,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/orkhanahmadov/laravel-http-locale-middleware)](https://packagist.org/packages/orkhanahmadov/laravel-http-locale-middleware)
 [![GitHub license](https://img.shields.io/github/license/orkhanahmadov/laravel-http-locale-middleware.svg)](https://github.com/orkhanahmadov/laravel-http-locale-middleware/blob/master/LICENSE.md)
 
-[![Build Status](https://img.shields.io/travis/orkhanahmadov/laravel-http-locale-middleware.svg)](https://travis-ci.org/orkhanahmadov/laravel-http-locale-middleware)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/92b05e08792d8c204cf6/test_coverage)](https://codeclimate.com/github/orkhanahmadov/laravel-http-locale-middleware/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/92b05e08792d8c204cf6/maintainability)](https://codeclimate.com/github/orkhanahmadov/laravel-http-locale-middleware/maintainability)
-[![Quality Score](https://img.shields.io/scrutinizer/g/orkhanahmadov/laravel-http-locale-middleware.svg)](https://scrutinizer-ci.com/g/orkhanahmadov/laravel-http-locale-middleware)
-[![StyleCI](https://github.styleci.io/repos/184265600/shield?branch=master)](https://github.styleci.io/repos/184265600)
+
 
 Description
 
