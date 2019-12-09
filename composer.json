@@ -1,0 +1,55 @@
+{
+    "name": "orkhanahmadov/laravel-http-locale-middleware",
+    "description": "Laravel middleware for setting application middleware based on HTTP header",
+    "keywords": [
+        "orkhanahmadov",
+        "laravel-http-locale-middleware"
+    ],
+    "homepage": "https://github.com/orkhanahmadov/laravel-http-locale-middleware",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Orkhan Ahmadov",
+            "email": "ahmadov90@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/http": "5.8.*|^6.0",
+        "illuminate/support": "5.8.*|^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Orkhanahmadov\\LaravelHttpLocaleMiddleware\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Orkhanahmadov\\LaravelHttpLocaleMiddleware\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Orkhanahmadov\\LaravelHttpLocaleMiddleware\\LaravelHttpLocaleMiddlewareServiceProvider"
+            ],
+            "aliases": {
+                "LaravelHttpLocaleMiddleware": "Orkhanahmadov\\LaravelHttpLocaleMiddleware\\LaravelHttpLocaleMiddlewareFacade"
+            }
+        }
+    }
+}
