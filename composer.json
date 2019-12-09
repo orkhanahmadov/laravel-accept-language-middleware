@@ -1,6 +1,6 @@
 {
     "name": "orkhanahmadov/laravel-http-locale-middleware",
-    "description": "Laravel middleware for setting application middleware based on HTTP header",
+    "description": "Laravel middleware for setting application locale based on HTTP header",
     "keywords": [
         "orkhanahmadov",
         "laravel-http-locale-middleware"
