@@ -1,11 +1,19 @@
-# Very short description of the package
+# WIP
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/orkhanahmadov/laravel-http-locale-middleware.svg?style=flat-square)](https://packagist.org/packages/orkhanahmadov/laravel-http-locale-middleware)
-[![Build Status](https://img.shields.io/travis/orkhanahmadov/laravel-http-locale-middleware/master.svg?style=flat-square)](https://travis-ci.org/orkhanahmadov/laravel-http-locale-middleware)
-[![Quality Score](https://img.shields.io/scrutinizer/g/orkhanahmadov/laravel-http-locale-middleware.svg?style=flat-square)](https://scrutinizer-ci.com/g/orkhanahmadov/laravel-http-locale-middleware)
-[![Total Downloads](https://img.shields.io/packagist/dt/orkhanahmadov/laravel-http-locale-middleware.svg?style=flat-square)](https://packagist.org/packages/orkhanahmadov/laravel-http-locale-middleware)
+# Info
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+[![Latest Stable Version](https://poser.pugx.org/orkhanahmadov/laravel-http-locale-middleware/v/stable)](https://packagist.org/packages/orkhanahmadov/laravel-http-locale-middleware)
+[![Latest Unstable Version](https://poser.pugx.org/orkhanahmadov/laravel-http-locale-middleware/v/unstable)](https://packagist.org/packages/orkhanahmadov/laravel-http-locale-middleware)
+[![Total Downloads](https://img.shields.io/packagist/dt/orkhanahmadov/laravel-http-locale-middleware)](https://packagist.org/packages/orkhanahmadov/laravel-http-locale-middleware)
+[![GitHub license](https://img.shields.io/github/license/orkhanahmadov/laravel-http-locale-middleware.svg)](https://github.com/orkhanahmadov/laravel-http-locale-middleware/blob/master/LICENSE.md)
+
+[![Build Status](https://img.shields.io/travis/orkhanahmadov/laravel-http-locale-middleware.svg)](https://travis-ci.org/orkhanahmadov/laravel-http-locale-middleware)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/92b05e08792d8c204cf6/test_coverage)](https://codeclimate.com/github/orkhanahmadov/laravel-http-locale-middleware/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/92b05e08792d8c204cf6/maintainability)](https://codeclimate.com/github/orkhanahmadov/laravel-http-locale-middleware/maintainability)
+[![Quality Score](https://img.shields.io/scrutinizer/g/orkhanahmadov/laravel-http-locale-middleware.svg)](https://scrutinizer-ci.com/g/orkhanahmadov/laravel-http-locale-middleware)
+[![StyleCI](https://github.styleci.io/repos/184265600/shield?branch=master)](https://github.styleci.io/repos/184265600)
+
+Description
 
 ## Installation
 
