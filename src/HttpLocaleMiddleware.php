@@ -36,9 +36,7 @@ class HttpLocaleMiddleware
     {
         $list = explode(',', $request->server('HTTP_ACCEPT_LANGUAGE'));
 
-//        dd($list);
-
-        $tst = collect($list)->map(function ($locale) {
+        $locales = collect($list)->map(function ($locale) {
             $parts = explode(';', $locale);
 
             $mapping['locale'] = trim($parts[0]);
@@ -52,13 +50,10 @@ class HttpLocaleMiddleware
             }
 
             return $mapping;
+        })->sortByDesc(function ($locale) {
+            return $locale['factor'];
         });
 
-        dd($tst->all());
-
-        $firstLocale = explode(';', $list[0]);
-        $localeParts = explode('-', $firstLocale[0]);
-
-        return trim($localeParts[0]);
+        return $locales->first()['locale'];
     }
 }

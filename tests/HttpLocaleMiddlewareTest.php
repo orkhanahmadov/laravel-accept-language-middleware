@@ -90,7 +90,7 @@ class HttpLocaleMiddlewareTest extends TestCase
     {
         $middleware = $this->app->make(HttpLocaleMiddleware::class);
         $request = Request::create('whatever', 'GET', [], [], [], [
-            'HTTP_ACCEPT_LANGUAGE' => 'fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5'
+            'HTTP_ACCEPT_LANGUAGE' => 'fr-CH, de;q=0.7, fr;q=0.9, en;q=0.8, *;q=0.5'
         ]);
         $this->assertEquals('en', App::getLocale());
 
