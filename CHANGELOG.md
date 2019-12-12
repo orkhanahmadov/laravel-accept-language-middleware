@@ -2,6 +2,6 @@
 
 All notable changes to `laravel-accept-language-middleware` will be documented in this file
 
-## 1.0.0 - 201X-XX-XX
+## 1.0.0 - 2019-12-12
 
-- initial release
+- Initial release
