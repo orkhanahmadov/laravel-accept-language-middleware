@@ -2,10 +2,10 @@
 
 # Info
 
-[![Latest Stable Version](https://poser.pugx.org/orkhanahmadov/laravel-http-locale-middleware/v/stable)](https://packagist.org/packages/orkhanahmadov/laravel-http-locale-middleware)
-[![Latest Unstable Version](https://poser.pugx.org/orkhanahmadov/laravel-http-locale-middleware/v/unstable)](https://packagist.org/packages/orkhanahmadov/laravel-http-locale-middleware)
-[![Total Downloads](https://img.shields.io/packagist/dt/orkhanahmadov/laravel-http-locale-middleware)](https://packagist.org/packages/orkhanahmadov/laravel-http-locale-middleware)
-[![GitHub license](https://img.shields.io/github/license/orkhanahmadov/laravel-http-locale-middleware.svg)](https://github.com/orkhanahmadov/laravel-http-locale-middleware/blob/master/LICENSE.md)
+[![Latest Stable Version](https://poser.pugx.org/orkhanahmadov/laravel-accept-language-middleware/v/stable)](https://packagist.org/packages/orkhanahmadov/laravel-accept-language-middleware)
+[![Latest Unstable Version](https://poser.pugx.org/orkhanahmadov/laravel-accept-language-middleware/v/unstable)](https://packagist.org/packages/orkhanahmadov/laravel-accept-language-middleware)
+[![Total Downloads](https://img.shields.io/packagist/dt/orkhanahmadov/laravel-accept-language-middleware)](https://packagist.org/packages/orkhanahmadov/laravel-accept-language-middleware)
+[![GitHub license](https://img.shields.io/github/license/orkhanahmadov/laravel-accept-language-middleware.svg)](https://github.com/orkhanahmadov/laravel-accept-language-middleware/blob/master/LICENSE.md)
 
 
 
@@ -16,7 +16,7 @@ Description
 You can install the package via composer:
 
 ```bash
-composer require orkhanahmadov/laravel-http-locale-middleware
+composer require orkhanahmadov/laravel-accept-language-middleware
 ```
 
 ## Usage
