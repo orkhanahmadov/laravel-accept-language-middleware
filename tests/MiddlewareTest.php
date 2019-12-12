@@ -12,11 +12,12 @@ class MiddlewareTest extends TestCase
     {
         $middleware = $this->app->make(Middleware::class);
         $request = Request::create('whatever', 'GET', [], [], [], [
-            'HTTP_ACCEPT_LANGUAGE' => 'es'
+            'HTTP_ACCEPT_LANGUAGE' => 'es',
         ]);
         $this->assertEquals('en', App::getLocale());
 
-        $middleware->handle($request, function () {});
+        $middleware->handle($request, function () {
+        });
 
         $this->assertEquals('es', App::getLocale());
     }
@@ -25,11 +26,12 @@ class MiddlewareTest extends TestCase
     {
         $middleware = $this->app->make(Middleware::class);
         $request = Request::create('whatever', 'GET', [], [], [], [
-            'HTTP_ACCEPT_LANGUAGE' => 'es-US'
+            'HTTP_ACCEPT_LANGUAGE' => 'es-US',
         ]);
         $this->assertEquals('en', App::getLocale());
 
-        $middleware->handle($request, function () {});
+        $middleware->handle($request, function () {
+        });
 
         $this->assertEquals('es-US', App::getLocale());
     }
@@ -38,11 +40,12 @@ class MiddlewareTest extends TestCase
     {
         $middleware = $this->app->make(Middleware::class);
         $request = Request::create('whatever', 'GET', [], [], [], [
-            'HTTP_ACCEPT_LANGUAGE' => 'es-US;q=0.5'
+            'HTTP_ACCEPT_LANGUAGE' => 'es-US;q=0.5',
         ]);
         $this->assertEquals('en', App::getLocale());
 
-        $middleware->handle($request, function () {});
+        $middleware->handle($request, function () {
+        });
 
         $this->assertEquals('es-US', App::getLocale());
     }
@@ -51,11 +54,12 @@ class MiddlewareTest extends TestCase
     {
         $middleware = $this->app->make(Middleware::class);
         $request = Request::create('whatever', 'GET', [], [], [], [
-            'HTTP_ACCEPT_LANGUAGE' => 'es, de'
+            'HTTP_ACCEPT_LANGUAGE' => 'es, de',
         ]);
         $this->assertEquals('en', App::getLocale());
 
-        $middleware->handle($request, function () {});
+        $middleware->handle($request, function () {
+        });
 
         $this->assertEquals('es', App::getLocale());
     }
@@ -64,11 +68,12 @@ class MiddlewareTest extends TestCase
     {
         $middleware = $this->app->make(Middleware::class);
         $request = Request::create('whatever', 'GET', [], [], [], [
-            'HTTP_ACCEPT_LANGUAGE' => 'es-US, de-DE'
+            'HTTP_ACCEPT_LANGUAGE' => 'es-US, de-DE',
         ]);
         $this->assertEquals('en', App::getLocale());
 
-        $middleware->handle($request, function () {});
+        $middleware->handle($request, function () {
+        });
 
         $this->assertEquals('es-US', App::getLocale());
     }
@@ -77,11 +82,12 @@ class MiddlewareTest extends TestCase
     {
         $middleware = $this->app->make(Middleware::class);
         $request = Request::create('whatever', 'GET', [], [], [], [
-            'HTTP_ACCEPT_LANGUAGE' => 'es-AZ;q=0.7, de-DE;q=0.8'
+            'HTTP_ACCEPT_LANGUAGE' => 'es-AZ;q=0.7, de-DE;q=0.8',
         ]);
         $this->assertEquals('en', App::getLocale());
 
-        $middleware->handle($request, function () {});
+        $middleware->handle($request, function () {
+        });
 
         $this->assertEquals('de-DE', App::getLocale());
     }
@@ -90,11 +96,12 @@ class MiddlewareTest extends TestCase
     {
         $middleware = $this->app->make(Middleware::class);
         $request = Request::create('whatever', 'GET', [], [], [], [
-            'HTTP_ACCEPT_LANGUAGE' => 'fr-CH, de;q=0.7, fr;q=0.9, en;q=0.8, *;q=0.5'
+            'HTTP_ACCEPT_LANGUAGE' => 'fr-CH, de;q=0.7, fr;q=0.9, en;q=0.8, *;q=0.5',
         ]);
         $this->assertEquals('en', App::getLocale());
 
-        $middleware->handle($request, function () {});
+        $middleware->handle($request, function () {
+        });
 
         $this->assertEquals('fr-CH', App::getLocale());
     }
