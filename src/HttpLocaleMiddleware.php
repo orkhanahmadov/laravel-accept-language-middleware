@@ -1,6 +1,6 @@
 <?php
 
-namespace Orkhanahmadov\LaravelHttpLocaleMiddleware;
+namespace Orkhanahmadov\LaravelAcceptLanguageMiddleware;
 
 use Closure;
 use Illuminate\Contracts\Foundation\Application;

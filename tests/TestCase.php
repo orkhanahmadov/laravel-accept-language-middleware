@@ -1,6 +1,6 @@
 <?php
 
-namespace Orkhanahmadov\LaravelHttpLocaleMiddleware\Tests;
+namespace Orkhanahmadov\LaravelAcceptLanguageMiddleware\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 

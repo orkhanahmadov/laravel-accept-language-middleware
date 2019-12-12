@@ -1,11 +1,13 @@
 {
-    "name": "orkhanahmadov/laravel-http-locale-middleware",
-    "description": "Laravel middleware for setting application locale based on HTTP header",
+    "name": "orkhanahmadov/laravel-accept-language-middleware",
+    "description": "Laravel middleware for setting application locale based on HTTP Accept-Language header",
     "keywords": [
         "orkhanahmadov",
-        "laravel-http-locale-middleware"
+        "accept-language",
+        "laravel",
+        "laravel middleware"
     ],
-    "homepage": "https://github.com/orkhanahmadov/laravel-http-locale-middleware",
+    "homepage": "https://github.com/orkhanahmadov/laravel-accept-language-middleware",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -27,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Orkhanahmadov\\LaravelHttpLocaleMiddleware\\": "src"
+            "Orkhanahmadov\\LaravelAcceptLanguageMiddleware\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Orkhanahmadov\\LaravelHttpLocaleMiddleware\\Tests\\": "tests"
+            "Orkhanahmadov\\LaravelAcceptLanguageMiddleware\\Tests\\": "tests"
         }
     },
     "scripts": {

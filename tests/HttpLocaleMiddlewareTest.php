@@ -1,10 +1,10 @@
 <?php
 
-namespace Orkhanahmadov\LaravelHttpLocaleMiddleware\Tests;
+namespace Orkhanahmadov\LaravelAcceptLanguageMiddleware\Tests;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
-use Orkhanahmadov\LaravelHttpLocaleMiddleware\HttpLocaleMiddleware;
+use Orkhanahmadov\LaravelAcceptLanguageMiddleware\HttpLocaleMiddleware;
 
 class HttpLocaleMiddlewareTest extends TestCase
 {
