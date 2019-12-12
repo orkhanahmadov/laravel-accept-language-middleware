@@ -1,15 +1,13 @@
 # WIP
 
-# Info
+# Laravel "Accept-Language" middleware
 
 [![Latest Stable Version](https://poser.pugx.org/orkhanahmadov/laravel-accept-language-middleware/v/stable)](https://packagist.org/packages/orkhanahmadov/laravel-accept-language-middleware)
 [![Latest Unstable Version](https://poser.pugx.org/orkhanahmadov/laravel-accept-language-middleware/v/unstable)](https://packagist.org/packages/orkhanahmadov/laravel-accept-language-middleware)
 [![Total Downloads](https://img.shields.io/packagist/dt/orkhanahmadov/laravel-accept-language-middleware)](https://packagist.org/packages/orkhanahmadov/laravel-accept-language-middleware)
 [![GitHub license](https://img.shields.io/github/license/orkhanahmadov/laravel-accept-language-middleware.svg)](https://github.com/orkhanahmadov/laravel-accept-language-middleware/blob/master/LICENSE.md)
 
-
-
-Description
+Laravel middleware for automatically setting application locale based on [HTTP "Accept-Language"](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language) header
 
 ## Installation
 
@@ -21,8 +19,42 @@ composer require orkhanahmadov/laravel-accept-language-middleware
 
 ## Usage
 
+Register `\Orkhanahmadov\LaravelAcceptLanguageMiddleware\Middleware::class` middleware in application's HTTP Kernel.
+
+You can install it as global middleware in Kernel's `$middleware` property:
+
 ``` php
-// Usage description here
+protected $middleware = [
+    ...
+    \Orkhanahmadov\LaravelAcceptLanguageMiddleware\Middleware::class
+];
+```
+
+You can install it to specific middleware groups in Kernel's `$middlewareGroups` property:
+
+``` php
+protected $middlewareGroups = [
+    'web' => [
+        ...
+        \Orkhanahmadov\LaravelAcceptLanguageMiddleware\Middleware::class
+    ]
+];
+```
+
+Or you can install is as route middleware in Kernel's `$routeMiddleware` and use it manually in routes:
+
+Kernel:
+
+``` php
+protected $routeMiddleware = [
+    ...
+    'accept-language' => \Orkhanahmadov\LaravelAcceptLanguageMiddleware\Middleware::class
+];
+```
+
+Route file
+``` php
+Route::middleware(['accept-language'])->get('/', 'MyController@index');
 ```
 
 ### Testing
