@@ -5,6 +5,7 @@ namespace Orkhanahmadov\LaravelHttpLocaleMiddleware;
 use Closure;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 
 class HttpLocaleMiddleware
 {
@@ -37,11 +38,16 @@ class HttpLocaleMiddleware
         return $next($request);
     }
 
+    /**
+     * @param Request $request
+     *
+     * @return string
+     */
     private function parseHttpLocale(Request $request): string
     {
         $list = explode(',', $request->server('HTTP_ACCEPT_LANGUAGE'));
 
-        $locales = collect($list)->map(function ($locale) {
+        $locales = Collection::make($list)->map(function ($locale) {
             $parts = explode(';', $locale);
 
             $mapping['locale'] = trim($parts[0]);
