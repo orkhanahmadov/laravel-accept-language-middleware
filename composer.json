@@ -18,7 +18,7 @@
     "require": {
         "php": "^7.2",
         "illuminate/http": "5.8.*|^6.0",
-        "illuminate/support": "5.8.*|^6.0"
+        "illuminate/contracts": "5.8.*|^6.0"
     },
     "require-dev": {
         "orchestra/testbench": "3.8.*",
@@ -41,15 +41,5 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Orkhanahmadov\\LaravelHttpLocaleMiddleware\\LaravelHttpLocaleMiddlewareServiceProvider"
-            ],
-            "aliases": {
-                "LaravelHttpLocaleMiddleware": "Orkhanahmadov\\LaravelHttpLocaleMiddleware\\LaravelHttpLocaleMiddlewareFacade"
-            }
-        }
     }
 }

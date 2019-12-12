@@ -13,6 +13,11 @@ class HttpLocaleMiddleware
      */
     private $app;
 
+    /**
+     * HttpLocaleMiddleware constructor.
+     *
+     * @param Application $app
+     */
     public function __construct(Application $app)
     {
         $this->app = $app;

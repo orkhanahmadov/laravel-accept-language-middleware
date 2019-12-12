@@ -31,7 +31,7 @@ class HttpLocaleMiddlewareTest extends TestCase
 
         $middleware->handle($request, function () {});
 
-        $this->assertEquals('es', App::getLocale());
+        $this->assertEquals('es-US', App::getLocale());
     }
 
     public function test_with_single_with_country_and_quality_value()
@@ -44,7 +44,7 @@ class HttpLocaleMiddlewareTest extends TestCase
 
         $middleware->handle($request, function () {});
 
-        $this->assertEquals('es', App::getLocale());
+        $this->assertEquals('es-US', App::getLocale());
     }
 
     public function test_with_multiple_locales()
@@ -70,20 +70,20 @@ class HttpLocaleMiddlewareTest extends TestCase
 
         $middleware->handle($request, function () {});
 
-        $this->assertEquals('es', App::getLocale());
+        $this->assertEquals('es-US', App::getLocale());
     }
 
     public function test_with_multiple_locales_with_countries_and_quality_value()
     {
         $middleware = $this->app->make(HttpLocaleMiddleware::class);
         $request = Request::create('whatever', 'GET', [], [], [], [
-            'HTTP_ACCEPT_LANGUAGE' => 'es-US;q=0.7, de-DE;q=0.8'
+            'HTTP_ACCEPT_LANGUAGE' => 'es-AZ;q=0.7, de-DE;q=0.8'
         ]);
         $this->assertEquals('en', App::getLocale());
 
         $middleware->handle($request, function () {});
 
-        $this->assertEquals('es', App::getLocale());
+        $this->assertEquals('de-DE', App::getLocale());
     }
 
     public function test_with_mixed_locale_values()
@@ -96,6 +96,6 @@ class HttpLocaleMiddlewareTest extends TestCase
 
         $middleware->handle($request, function () {});
 
-        $this->assertEquals('fr', App::getLocale());
+        $this->assertEquals('fr-CH', App::getLocale());
     }
 }
