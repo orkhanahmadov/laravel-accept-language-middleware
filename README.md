@@ -1,5 +1,3 @@
-# WIP
-
 # Laravel "Accept-Language" middleware
 
 [![Latest Stable Version](https://poser.pugx.org/orkhanahmadov/laravel-accept-language-middleware/v/stable)](https://packagist.org/packages/orkhanahmadov/laravel-accept-language-middleware)
