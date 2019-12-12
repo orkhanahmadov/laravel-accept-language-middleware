@@ -7,6 +7,12 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/orkhanahmadov/laravel-accept-language-middleware)](https://packagist.org/packages/orkhanahmadov/laravel-accept-language-middleware)
 [![GitHub license](https://img.shields.io/github/license/orkhanahmadov/laravel-accept-language-middleware.svg)](https://github.com/orkhanahmadov/laravel-accept-language-middleware/blob/master/LICENSE.md)
 
+[![Build Status](https://travis-ci.org/orkhanahmadov/laravel-accept-language-middleware.svg?branch=master)](https://travis-ci.org/orkhanahmadov/laravel-accept-language-middleware)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/56bd16c9d7eb462261d3/test_coverage)](https://codeclimate.com/github/orkhanahmadov/laravel-accept-language-middleware/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/56bd16c9d7eb462261d3/maintainability)](https://codeclimate.com/github/orkhanahmadov/laravel-accept-language-middleware/maintainability)
+[![Quality Score](https://img.shields.io/scrutinizer/g/orkhanahmadov/laravel-accept-language-middleware.svg)](https://scrutinizer-ci.com/g/orkhanahmadov/laravel-accept-language-middleware)
+[![StyleCI](https://github.styleci.io/repos/227684667/shield?branch=master)](https://github.styleci.io/repos/227684667)
+
 Laravel middleware for automatically setting application locale based on [HTTP "Accept-Language"](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language) header
 
 ## Installation
