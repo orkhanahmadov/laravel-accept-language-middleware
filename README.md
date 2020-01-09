@@ -13,6 +13,11 @@
 
 Laravel middleware for automatically setting application locale based on [HTTP "Accept-Language"](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language) header
 
+## Requirements
+
+- Laravel **5.8.* or ^6.0** or higher
+- PHP **7.2** or higher.
+
 ## Installation
 
 You can install the package via composer:
