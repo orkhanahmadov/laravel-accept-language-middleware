@@ -25,13 +25,20 @@ matrix:
           env: LARAVEL_VERSION=~6.0  TESTBENCH_VERSION=~4.0  PHPUNIT_VERSION=~8.0
         - php: 7.4
           env: LARAVEL_VERSION=~7.0  TESTBENCH_VERSION=~5.0  PHPUNIT_VERSION=~8.0
+          
+        - php: 7.4
+          env: LARAVEL_VERSION=~8.0  TESTBENCH_VERSION=~6.0  PHPUNIT_VERSION=~8.0
+        - php: 7.4
+          env: LARAVEL_VERSION=~8.0  TESTBENCH_VERSION=~6.0  PHPUNIT_VERSION=~9.0
+          
+        - php: 8.0
+          env: LARAVEL_VERSION=~8.0  TESTBENCH_VERSION=~6.0  PHPUNIT_VERSION=~9.0
 
 before_install:
     - travis_retry composer self-update
     - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
     - chmod +x ./cc-test-reporter
     - ./cc-test-reporter before-build
-    - composer global require hirak/prestissimo --update-no-dev
 
 install:
     - composer require "illuminate/http:${LARAVEL_VERSION}" --no-update --no-interaction --prefer-dist
