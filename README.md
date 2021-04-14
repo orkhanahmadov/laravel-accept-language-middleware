@@ -16,7 +16,7 @@ Laravel middleware for automatically setting application locale based on [HTTP "
 ## Requirements
 
 - PHP **7.2** or higher.
-- Laravel **^6.0**, **^7.0** or higher
+- Laravel **^6.0**, **^7.0**, **^8.0** or higher
 
 ## Installation
 
