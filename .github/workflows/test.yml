@@ -30,8 +30,6 @@ jobs:
         with:
           php-version: ${{ matrix.php-version }}
       - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: composer install --no-interaction --prefer-dist --no-progress
       - name: Install laravel
         run: composer require illuminate/contracts:${{ matrix.laravel-version }} --no-interaction --prefer-dist --no-progress
       - name: Run unit tests
