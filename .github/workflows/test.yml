@@ -1,0 +1,20 @@
+name: Unit Test
+on: [ push ]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-version: ['8.0', '8.1']
+        laravel-version: ['^9']
+    steps:
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+      - uses: actions/checkout@v2
+      - name: Install laravel
+        run: composer require illuminate/contracts:${{ matrix.laravel-version }} --no-interaction --prefer-dist --no-progress
+      - name: Run unit tests
+        run: vendor/bin/phpunit
+
