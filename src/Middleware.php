@@ -26,7 +26,7 @@ class Middleware
 
     private function parseHttpLocale(Request $request): string
     {
-        $list = explode(',', $request->server('HTTP_ACCEPT_LANGUAGE'));
+        $list = explode(',', $request->server('HTTP_ACCEPT_LANGUAGE', ''));
 
         $locales = Collection::make($list)
             ->map(function ($locale) {
