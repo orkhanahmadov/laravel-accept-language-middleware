@@ -17,7 +17,9 @@ class Middleware
      */
     public function handle($request, Closure $next)
     {
-        if ($locale = $this->parseHttpLocale($request)) {
+        $locale = $this->parseHttpLocale($request);
+        
+        if ($locale && $locale !== '*') {
             app()->setLocale($locale);
         }
 
